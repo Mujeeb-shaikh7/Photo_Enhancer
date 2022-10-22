@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photot Enhancer</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <div class="container disabel">
+        <h1>Easy Image Editor</h1>
+        <div class="bodi">
+            <div class="edit-components">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <div class="buttons">
+                        <button id="Brightness" class="btn-style active">Brightness</button>
+                        <button id="Saturation" class="btn-style">Saturation</button>
+                        <button id="Inversion" class="btn-style">Inversion</button>
+                        <button id="Grayscale" class="btn-style">Grayscale</button>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="second-text">
+                        <h3>Brightness</h3>
+                        <p></p>
+                    </div>
+                   
+                   <input type="range" min="0" max="200">
+                </div>
+                <div class="third">
+                    <h3>Rotate & Flip</h3>
+                    <div class="button2">
+                        <button id="right" class="rotate" ><box-icon name='rotate-right'></box-icon></button>
+                        <button id="left" class="rotate"><box-icon name='rotate-left' ></box-icon></button>
+                        <button id="horizontal" class="rotate"><box-icon name='reflect-horizontal' ></box-icon></button>
+                        <button id="vertical" class="rotate"><box-icon name='reflect-vertical' ></box-icon></button>
+                    </div>
+                </div>
+            </div>
+            <div class="edit-image">
+                <img src="imageplace.jpg" alt="">
+            </div>
+        </div>
+       
+        <footer>
+            <button class="reset">RESET FILTER</button>
+
+            <div class="btn">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="chose-img">CHOOSE IMAGE</button>
+                <BUtton class="save-img reset">SAVE IMAGE</BUtton>
+            </div>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
